@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+	(function(){
+		window.onload=function(){
+			var app=new Vue({
+				el:"#app",
+				data:{
+					
+				},
+				methods:{
+					
+				},
+				mounted:function(){
+
+				}
+			});
+			
+		}
+
+	})();
+	</script>
+	<style type="text/css">
+
+		body{
+			margin: 0;
+			background-color:rgb(255, 255, 255);
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+		
+		.state{
+			position: absolute;
+   			display: block;
+    		width: 100%;
+   			height: 270px;
+    		background-color: #fed52d;
+    		text-align: center;
+			padding: 30px;
+			box-sizing: border-box;
+		}
+		.state01{
+			position: relative;
+    		display: inline-block;
+
+		}
+		.step1_word{
+			position: relative;
+    		display: inline-block;
+    		color: white;
+		}
+		.step1_word>p{
+			position: relative;
+			display: inline-block;
+			word-wrap:break-word;
+			background-color: black;
+			width: 100px;
+			height:100px;
+			text-align: center;
+			border-radius: 100px;
+			line-height: 100px;
+		}
+		.step1_word::before{
+			content: "";
+			position: absolute;
+			display: inline-block;
+			width: 150px;
+			height:150px;
+			background-color: rgba(0, 0, 0,0.5);
+			border-radius: 150px;
+			top:calc(50% - 75px);
+			left:calc(50% - 75px);
+		}
+		.step1_word>span{
+			position: absolute;
+			display: inline-block;
+			white-space: nowrap;
+			font-size: 24pt;
+			text-align: center;
+			color: black;
+			width: 220px;
+			left: 50%;
+			margin-left: -110px;
+			top: 160px;
+		}
+		.rectangle{
+			position: relative;
+    		display: inline-block;
+    		background-color: white;
+    		width: 150px;
+    		height: 10px;
+    		margin: 0px 30px;
+		}
+		.step1_word.step2>p{
+			background-color: #faefc1;
+			color: black;
+		}
+		.step1_word.step2>span{
+			color: white;
+		}
+		.step1_word.step2::before{
+			background-color: #fcf266;
+		}
+		.title01{
+			position: relative;
+			display: inline-block;
+			color:black;
+			font-size: 50px;
+		}
+		.menu{
+			position:relative;
+			display:block;
+			padding-top: 270px;
+			padding-left: 200px;
+    		box-sizing: border-box;
+		}
+		.menu01{
+			position: relative;
+			display:block;
+		}
+		.title01{
+			position:relative;
+			display:block;
+			font-weight: bold;
+			margin: 40px 0px;
+			box-sizing: border-box;	
+		}
+		.title01:after{
+			content:"";
+			position:relative;
+			display: inline-block;
+			background-color:#fed52d;
+			width:70px;
+			height: 10px;
+			border-radius: 5px;
+			right:-30px;
+			bottom:15px;
+			
+		}
+		.text{
+			position:relative;
+			display:inline-block;
+			font-size: 28pt;
+			font-weight: bold;
+			vertical-align:middle;
+			margin: 40px 0px;
+		
+		}
+		.title02::before{
+			content: "";
+			position:relative;
+			display:inline-block;
+			width:15px;
+			height: 15px;
+			border-radius: 15px;
+			background-color: #fed52d;
+			margin-right: 10px;
+			
+			
+		}
+		.context_btn{
+			position:relative;
+			display: inline-block;
+			border:1px solid rgb(173, 173, 173);
+			width:330px;
+			height: 110px;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 110px;
+			font-size: 25pt;
+			margin: 40px 40px 40px 0px;
+			box-sizing: border-box;	
+		}
+		.pay_method{
+			position:relative;
+			display: inline-block;
+			margin-left:0px; 
+		}
+		.card_number_btn{
+			position:relative;
+			display: inline-block;
+			border:1px solid rgb(173, 173, 173);
+			width:150px;
+			height: 70px;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 120px;
+			font-size: 25pt;
+		}
+		.branch{
+			position:relative;
+			display: inline-block;
+			font-size: 40px;
+			margin:0px 15px;
+		}
+		.icon{
+			position:relative;
+			display: inline-block;
+			width:35px;
+			height:35px;
+			border: 3px solid black;
+			outline: 0px;
+			border-radius: 35px;
+			margin: 0px;
+		}
+		.label{
+			position: relative;
+			display:block;
+			margin: 80px 0px 20px 0px;	
+		}
+		.buyer_infor{
+			position: relative;
+			display: inline;
+			font-size: 25pt;
+		}
+		.buyer_infor_subtext{
+			position: relative;
+			display: inline;
+			font-size: 22pt;
+			color:cornflowerblue;	
+		}
+		.coupon_number{
+			position:relative;
+			display: inline-block;
+			border:1px solid rgb(173, 173, 173);
+			width:300px;
+			height: 70px;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 120px;
+			font-size: 25pt;
+			margin-bottom: 110px;
+		}
+		.a{
+			position:relative;
+			display: block;
+			margin-top: 80px;
+		}
+		.checkbox{
+			position:relative;
+			display: inline-block;
+			width:35px;
+			height:35px;
+			border: 3px solid black;
+			margin-bottom: 200px;;
+		}
+		.bottom_group{
+			position:fixed;
+			display:block;
+			width: 100%;
+   			height: 100px;
+    		background-color: #d1d1d1;
+    		text-align: center;
+			line-height: 10px;
+			bottom: 0px;
+		}
+		.bottom{
+			position:relative;
+			display: inline-block;
+			background-color:rgb(134, 134, 133);
+			width:250px;
+			height: 60px;
+			border-radius: 7px;
+			text-align: center;
+			line-height: 60px;
+			font-size: 25pt;
+			margin-right: 10px;
+			top:calc(50% - 30px);
+
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div class="state">
+			<div class="state01">
+				<div class="step1_word"><p>STEP.1</p><span>選擇支付方式</span></div>				
+			</div>
+			<div class="rectangle"></div>	
+			<div class="state01">
+				<div class="step1_word step2"><p>STEP.2</p><span>確認訂購資訊</span></div>				
+			</div>
+			<div class="rectangle"></div>	
+			<div class="state01">
+				<div class="step1_word step2"><p>STEP.3</p><span>支付成功</span></div>				
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menu01">
+				<div class="title01">選擇支付方式</div>
+				<div class="pay_method">
+					<div class="context_btn">信用卡付款</div>
+					<div class="context_btn">超商付款</div>
+				</div>
+			</div>
+			<div class="menu02">
+				<div class="title02">
+					<div class="text">請輸入信用卡卡號</div>
+				</div>
+				<div class="pay_method">
+						<input type="text" maxlength="4" class="card_number_btn">
+						<div class="branch">-</div>
+						<input type="text" maxlength="4" class="card_number_btn">
+						<div class="branch">-</div>
+						<input type="text" maxlength="4" class="card_number_btn">
+						<div class="branch">-</div>
+						<input type="text" maxlength="4" class="card_number_btn">
+				</div>
+			</div>
+			<div class="menu02">
+				<div class="title02">
+					<div class="text">請輸入信用卡期限</div>
+				</div>
+				<div class="pay_method">
+					<input type="text" maxlength="2" class="card_number_btn">
+					<div class="branch">/</div>
+					<input type="text" maxlength="2" class="card_number_btn">
+				</div>
+			</div>
+			<div class="menu02">
+				<div class="title02">
+					<div class="text">請輸入信用卡背後安全碼</div>
+				</div>
+				<div class="pay_method">
+					<input type="text" maxlength="4" class="card_number_btn">
+				</div>
+			</div>
+			<div class="menu01">
+					<div class="title01">購買者資訊</div>
+					<div class="label">
+						<input type="radio" name="buyer_data" class="icon" checked>
+						<div class="buyer_infor">我想以遊客身分購買</div>
+					</div>
+					<div class="label">
+						<input type="radio" name="buyer_data" class="icon">
+						<div class="buyer_infor">我想加入會員</div>
+						<div class="buyer_infor_subtext">加入會員後您即可享有首次消費$50折抵，我們也將不定期釋出其他優惠給會員</div>
+					</div>
+			</div>
+			<div class="coupon_group">
+				<div class="text a">請輸入優惠代碼</div>
+				<input type="text" maxlength="8" class="coupon_number">
+				<div class="buyer_infor_subtext">優惠代碼12345678</div>
+			</div>
+			<div class="agree_group">
+				<input type="checkbox" class="checkbox">
+				<div class="buyer_infor">我同意接受酷社坊服務條款和隱私權政策</div>
+			</div>
+		</div>
+		<div class="bottom_group">
+			<bottom class="bottom">回到購物車</bottom>
+			<bottom class="bottom">下一步</bottom>
+		</div>
+	</div>
+</body>
+</html>
